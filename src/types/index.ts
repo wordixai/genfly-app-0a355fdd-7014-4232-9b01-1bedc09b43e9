@@ -191,3 +191,16 @@ export enum TaskPriority {
   MEDIUM = "MEDIUM",
   HIGH = "HIGH"
 }
+
+// Currency and Locale types
+export type Currency = {
+  code: string;
+  symbol: string;
+  name: string;
+}
+
+export type Locale = {
+  code: string;
+  name: string;
+  flag: string;
+}

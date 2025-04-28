@@ -1,0 +1,99 @@
+{
+  "app": {
+    "name": "RentalProc"
+  },
+  "navigation": {
+    "home": "Inicio",
+    "properties": "Propiedades",
+    "tenants": "Inquilinos",
+    "payments": "Pagos",
+    "tasks": "Tareas",
+    "expenses": "Gastos",
+    "facilities": "Instalaciones",
+    "messages": "Mensajes",
+    "settings": "Configuración"
+  },
+  "dashboard": {
+    "welcome": "Bienvenido a su panel de gestión de propiedades.",
+    "stats": {
+      "totalProperties": "Propiedades Totales",
+      "propertiesUnderManagement": "Propiedades bajo gestión",
+      "activeTenants": "Inquilinos Activos",
+      "currentOccupancy": "Ocupación actual",
+      "monthlyRevenue": "Ingresos Mensuales",
+      "fromRentAndFees": "De alquileres y tarifas",
+      "openTasks": "Tareas Abiertas",
+      "tasksRequiringAttention": "Tareas que requieren atención"
+    },
+    "featuredProperties": "Propiedades Destacadas"
+  },
+  "properties": {
+    "title": "Propiedades",
+    "subtitle": "Gestione su cartera de propiedades",
+    "addProperty": "Añadir Propiedad",
+    "filters": {
+      "search": "Buscar propiedades...",
+      "propertyType": "Tipo de Propiedad",
+      "allTypes": "Todos los Tipos",
+      "status": "Estado",
+      "allStatuses": "Todos los Estados",
+      "forSale": "En Venta",
+      "forRent": "En Alquiler",
+      "active": "Activa",
+      "sold": "Vendida",
+      "rented": "Alquilada",
+      "bedrooms": "Dormitorios",
+      "bathrooms": "Baños",
+      "any": "Cualquiera",
+      "priceRange": "Rango de Precio",
+      "resetFilters": "Restablecer Filtros"
+    },
+    "noProperties": "No se encontraron propiedades",
+    "tryAdjustingFilters": "Intente ajustar sus filtros para encontrar lo que está buscando."
+  },
+  "propertyDetail": {
+    "backToProperties": "Volver a Propiedades",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "price": "Precio",
+    "details": "Detalles",
+    "location": "Ubicación",
+    "description": "Descripción",
+    "noDescription": "No hay descripción disponible.",
+    "amenities": "Comodidades",
+    "locationFeatures": "Características de la Ubicación",
+    "noAmenities": "No hay comodidades listadas para esta propiedad.",
+    "noLocationFeatures": "No hay características de ubicación listadas para esta propiedad.",
+    "notFound": "Propiedad No Encontrada",
+    "notFoundMessage": "La propiedad que está buscando no existe o ha sido eliminada."
+  },
+  "messages": {
+    "title": "Mensajes",
+    "subtitle": "Comuníquese con inquilinos y miembros del equipo",
+    "typeMessage": "Escriba su mensaje..."
+  },
+  "tasks": {
+    "title": "Tareas",
+    "subtitle": "Gestione y realice seguimiento de tareas relacionadas con propiedades",
+    "addTask": "Añadir Tarea",
+    "tabs": {
+      "open": "Abiertas",
+      "inProgress": "En Progreso",
+      "completed": "Completadas",
+      "cancelled": "Canceladas"
+    },
+    "due": "Vencimiento",
+    "noTasks": "No se encontraron tareas",
+    "actions": {
+      "start": "Iniciar",
+      "complete": "Completar",
+      "cancel": "Cancelar"
+    }
+  },
+  "common": {
+    "bd": "hab",
+    "ba": "baños",
+    "sqft": "m²",
+    "builtIn": "Construido en"
+  }
+}

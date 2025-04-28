@@ -1,0 +1,99 @@
+{
+  "app": {
+    "name": "RentalProc"
+  },
+  "navigation": {
+    "home": "Startseite",
+    "properties": "Immobilien",
+    "tenants": "Mieter",
+    "payments": "Zahlungen",
+    "tasks": "Aufgaben",
+    "expenses": "Ausgaben",
+    "facilities": "Einrichtungen",
+    "messages": "Nachrichten",
+    "settings": "Einstellungen"
+  },
+  "dashboard": {
+    "welcome": "Willkommen in Ihrem Immobilienverwaltungs-Dashboard.",
+    "stats": {
+      "totalProperties": "Gesamte Immobilien",
+      "propertiesUnderManagement": "Immobilien unter Verwaltung",
+      "activeTenants": "Aktive Mieter",
+      "currentOccupancy": "Aktuelle Belegung",
+      "monthlyRevenue": "Monatliche Einnahmen",
+      "fromRentAndFees": "Aus Mieten und Gebühren",
+      "openTasks": "Offene Aufgaben",
+      "tasksRequiringAttention": "Aufgaben, die Aufmerksamkeit erfordern"
+    },
+    "featuredProperties": "Ausgewählte Immobilien"
+  },
+  "properties": {
+    "title": "Immobilien",
+    "subtitle": "Verwalten Sie Ihr Immobilienportfolio",
+    "addProperty": "Immobilie hinzufügen",
+    "filters": {
+      "search": "Immobilien suchen...",
+      "propertyType": "Immobilientyp",
+      "allTypes": "Alle Typen",
+      "status": "Status",
+      "allStatuses": "Alle Status",
+      "forSale": "Zu Verkaufen",
+      "forRent": "Zu Vermieten",
+      "active": "Aktiv",
+      "sold": "Verkauft",
+      "rented": "Vermietet",
+      "bedrooms": "Schlafzimmer",
+      "bathrooms": "Badezimmer",
+      "any": "Beliebig",
+      "priceRange": "Preisbereich",
+      "resetFilters": "Filter zurücksetzen"
+    },
+    "noProperties": "Keine Immobilien gefunden",
+    "tryAdjustingFilters": "Versuchen Sie, Ihre Filter anzupassen, um zu finden, wonach Sie suchen."
+  },
+  "propertyDetail": {
+    "backToProperties": "Zurück zu Immobilien",
+    "edit": "Bearbeiten",
+    "delete": "Löschen",
+    "price": "Preis",
+    "details": "Details",
+    "location": "Standort",
+    "description": "Beschreibung",
+    "noDescription": "Keine Beschreibung verfügbar.",
+    "amenities": "Ausstattung",
+    "locationFeatures": "Standortmerkmale",
+    "noAmenities": "Keine Ausstattung für diese Immobilie aufgeführt.",
+    "noLocationFeatures": "Keine Standortmerkmale für diese Immobilie aufgeführt.",
+    "notFound": "Immobilie nicht gefunden",
+    "notFoundMessage": "Die gesuchte Immobilie existiert nicht oder wurde entfernt."
+  },
+  "messages": {
+    "title": "Nachrichten",
+    "subtitle": "Kommunizieren Sie mit Mietern und Teammitgliedern",
+    "typeMessage": "Geben Sie Ihre Nachricht ein..."
+  },
+  "tasks": {
+    "title": "Aufgaben",
+    "subtitle": "Verwalten und verfolgen Sie immobilienbezogene Aufgaben",
+    "addTask": "Aufgabe hinzufügen",
+    "tabs": {
+      "open": "Offen",
+      "inProgress": "In Bearbeitung",
+      "completed": "Abgeschlossen",
+      "cancelled": "Abgebrochen"
+    },
+    "due": "Fällig",
+    "noTasks": "Keine Aufgaben gefunden",
+    "actions": {
+      "start": "Starten",
+      "complete": "Abschließen",
+      "cancel": "Abbrechen"
+    }
+  },
+  "common": {
+    "bd": "SZ",
+    "ba": "Bäder",
+    "sqft": "m²",
+    "builtIn": "Gebaut in"
+  }
+}

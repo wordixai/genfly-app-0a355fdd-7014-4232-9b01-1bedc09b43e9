@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Outlet } from "react-router-dom";
+import { Outlet, Link, useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { 
   SidebarProvider, 
   Sidebar, 
@@ -14,6 +15,7 @@ import {
 } from "@/components/ui/sidebar";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
+import { Tabs } from "@/components/ui/aceternity/tabs";
 import { 
   Home, 
   Building2, 
@@ -24,12 +26,61 @@ import {
   Building, 
   MessageSquare, 
   Settings, 
-  LogOut 
+  LogOut,
+  Globe,
+  Coins
 } from "lucide-react";
 import { users } from "@/data/mockData";
+import { useLocale, locales } from "@/contexts/LocaleContext";
+import { useCurrency, currencies } from "@/contexts/CurrencyContext";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 const MainLayout = () => {
+  const { t } = useTranslation();
+  const location = useLocation();
   const [currentUser] = useState(users[0]); // Using the admin user for demo
+  const { currentLocale, setLocale } = useLocale();
+  const { currentCurrency, setCurrency } = useCurrency();
+
+  // Define tabs for the header
+  const headerTabs = [
+    {
+      title: t('navigation.home'),
+      value: 'home',
+      content: null,
+    },
+    {
+      title: t('navigation.properties'),
+      value: 'properties',
+      content: null,
+    },
+    {
+      title: t('navigation.tenants'),
+      value: 'tenants',
+      content: null,
+    },
+    {
+      title: t('navigation.tasks'),
+      value: 'tasks',
+      content: null,
+    },
+    {
+      title: t('navigation.messages'),
+      value: 'messages'),
+      content: null,
+    },
+  ];
+
+  // Get current path for active state
+  const getIsActive = (path: string) => {
+    return location.pathname === path || 
+           (path !== '/' && location.pathname.startsWith(path));
+  };
 
   return (
     <SidebarProvider defaultOpen={true}>
@@ -38,81 +89,81 @@ const MainLayout = () => {
           <SidebarHeader>
             <div className="flex items-center gap-2 px-2">
               <Building2 className="h-6 w-6 text-primary" />
-              <span className="text-xl font-bold">RentalProc</span>
+              <span className="text-xl font-bold">{t('app.name')}</span>
             </div>
           </SidebarHeader>
           
           <SidebarContent>
             <SidebarMenu>
               <SidebarMenuItem>
-                <SidebarMenuButton tooltip="Home" asChild>
-                  <a href="/">
+                <SidebarMenuButton tooltip={t('navigation.home')} asChild isActive={getIsActive('/')}>
+                  <Link to="/">
                     <Home />
-                    <span>Home</span>
-                  </a>
+                    <span>{t('navigation.home')}</span>
+                  </Link>
                 </SidebarMenuButton>
               </SidebarMenuItem>
               
               <SidebarMenuItem>
-                <SidebarMenuButton tooltip="Properties" asChild>
-                  <a href="/properties">
+                <SidebarMenuButton tooltip={t('navigation.properties')} asChild isActive={getIsActive('/properties')}>
+                  <Link to="/properties">
                     <Building2 />
-                    <span>Properties</span>
-                  </a>
+                    <span>{t('navigation.properties')}</span>
+                  </Link>
                 </SidebarMenuButton>
               </SidebarMenuItem>
               
               <SidebarMenuItem>
-                <SidebarMenuButton tooltip="Tenants" asChild>
-                  <a href="/tenants">
+                <SidebarMenuButton tooltip={t('navigation.tenants')} asChild isActive={getIsActive('/tenants')}>
+                  <Link to="/tenants">
                     <Users />
-                    <span>Tenants</span>
-                  </a>
+                    <span>{t('navigation.tenants')}</span>
+                  </Link>
                 </SidebarMenuButton>
               </SidebarMenuItem>
               
               <SidebarMenuItem>
-                <SidebarMenuButton tooltip="Payments" asChild>
-                  <a href="/payments">
+                <SidebarMenuButton tooltip={t('navigation.payments')} asChild isActive={getIsActive('/payments')}>
+                  <Link to="/payments">
                     <CreditCard />
-                    <span>Payments</span>
-                  </a>
+                    <span>{t('navigation.payments')}</span>
+                  </Link>
                 </SidebarMenuButton>
               </SidebarMenuItem>
               
               <SidebarMenuItem>
-                <SidebarMenuButton tooltip="Tasks" asChild>
-                  <a href="/tasks">
+                <SidebarMenuButton tooltip={t('navigation.tasks')} asChild isActive={getIsActive('/tasks')}>
+                  <Link to="/tasks">
                     <ClipboardList />
-                    <span>Tasks</span>
-                  </a>
+                    <span>{t('navigation.tasks')}</span>
+                  </Link>
                 </SidebarMenuButton>
               </SidebarMenuItem>
               
               <SidebarMenuItem>
-                <SidebarMenuButton tooltip="Expenses" asChild>
-                  <a href="/expenses">
+                <SidebarMenuButton tooltip={t('navigation.expenses')} asChild isActive={getIsActive('/expenses')}>
+                  <Link to="/expenses">
                     <DollarSign />
-                    <span>Expenses</span>
-                  </a>
+                    <span>{t('navigation.expenses')}</span>
+                  </Link>
                 </SidebarMenuButton>
               </SidebarMenuItem>
               
               <SidebarMenuItem>
-                <SidebarMenuButton tooltip="Facilities" asChild>
-                  <a href="/facilities">
+                <SidebarMenuButton tooltip={t('navigation.facilities')} asChild isActive={getIsActive('/facilities')}>
+                  <Link to="/facilities">
                     <Building />
-                    <span>Facilities</span>
-                  </a>
+                    <span>{t('navigation.facilities')}</span>
+                  </Link>
                 </SidebarMenuButton>
               </SidebarMenuItem>
               
               <SidebarMenuItem>
-                <SidebarMenuButton tooltip="Messages" asChild>
-                  <a href="/messages">
+                <SidebarMenuButton tooltip={t('navigation.messages')} asChild isActive={getIsActive('/messages')}>
+                  <Link to="/messages">
                     <MessageSquare />
-                    <span>Messages</span>
-                  </a>
+                    <span>{t('navigation.messages')}</span>
+                  </Link>
                 </SidebarMenuButton>
               </SidebarMenuItem>
             </SidebarMenu>
@@ -138,15 +189,69 @@ const MainLayout = () => {
         </Sidebar>
         
         <SidebarInset className="flex flex-col">
-          <header className="flex h-14 items-center gap-4 border-b bg-background px-4 lg:px-6">
+          <header className="flex h-16 items-center gap-4 border-b bg-background px-4 lg:px-6">
             <SidebarTrigger />
-            <div className="flex-1">
-              <h1 className="text-lg font-semibold">RentalProc</h1>
+            
+            <div className="flex-1 flex items-center">
+              <div className="hidden md:block">
+                <Tabs 
+                  tabs={headerTabs}
+                  containerClassName="w-auto"
+                  contentClassName="hidden" // Hide content as we're using React Router
+                />
+              </div>
             </div>
+            
             <div className="flex items-center gap-4">
+              {/* Language Selector */}
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <Button variant="outline" size="sm" className="gap-2">
+                    <Globe className="h-4 w-4" />
+                    <span>{currentLocale.flag}</span>
+                    <span className="hidden md:inline">{currentLocale.name}</span>
+                  </Button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="end">
+                  {locales.map((locale) => (
+                    <DropdownMenuItem 
+                      key={locale.code}
+                      onClick={() => setLocale(locale)}
+                      className="cursor-pointer"
+                    >
+                      <span className="mr-2">{locale.flag}</span>
+                      {locale.name}
+                    </DropdownMenuItem>
+                  ))}
+                </DropdownMenuContent>
+              </DropdownMenu>
+              
+              {/* Currency Selector */}
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <Button variant="outline" size="sm" className="gap-2">
+                    <Coins className="h-4 w-4" />
+                    <span>{currentCurrency.symbol}</span>
+                    <span className="hidden md:inline">{currentCurrency.code}</span>
+                  </Button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="end">
+                  {currencies.map((currency) => (
+                    <DropdownMenuItem 
+                      key={currency.code}
+                      onClick={() => setCurrency(currency)}
+                      className="cursor-pointer"
+                    >
+                      <span className="mr-2">{currency.symbol}</span>
+                      {currency.name} ({currency.code})
+                    </DropdownMenuItem>
+                  ))}
+                </DropdownMenuContent>
+              </DropdownMenu>
+              
               <Button variant="outline" size="sm">
                 <Settings className="mr-2 h-4 w-4" />
-                Settings
+                {t('navigation.settings')}
               </Button>
             </div>
           </header>

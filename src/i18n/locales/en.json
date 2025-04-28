@@ -1,0 +1,99 @@
+{
+  "app": {
+    "name": "RentalProc"
+  },
+  "navigation": {
+    "home": "Home",
+    "properties": "Properties",
+    "tenants": "Tenants",
+    "payments": "Payments",
+    "tasks": "Tasks",
+    "expenses": "Expenses",
+    "facilities": "Facilities",
+    "messages": "Messages",
+    "settings": "Settings"
+  },
+  "dashboard": {
+    "welcome": "Welcome to your property management dashboard.",
+    "stats": {
+      "totalProperties": "Total Properties",
+      "propertiesUnderManagement": "Properties under management",
+      "activeTenants": "Active Tenants",
+      "currentOccupancy": "Current occupancy",
+      "monthlyRevenue": "Monthly Revenue",
+      "fromRentAndFees": "From rent and fees",
+      "openTasks": "Open Tasks",
+      "tasksRequiringAttention": "Tasks requiring attention"
+    },
+    "featuredProperties": "Featured Properties"
+  },
+  "properties": {
+    "title": "Properties",
+    "subtitle": "Manage your property portfolio",
+    "addProperty": "Add Property",
+    "filters": {
+      "search": "Search properties...",
+      "propertyType": "Property Type",
+      "allTypes": "All Types",
+      "status": "Status",
+      "allStatuses": "All Statuses",
+      "forSale": "For Sale",
+      "forRent": "For Rent",
+      "active": "Active",
+      "sold": "Sold",
+      "rented": "Rented",
+      "bedrooms": "Bedrooms",
+      "bathrooms": "Bathrooms",
+      "any": "Any",
+      "priceRange": "Price Range",
+      "resetFilters": "Reset Filters"
+    },
+    "noProperties": "No properties found",
+    "tryAdjustingFilters": "Try adjusting your filters to find what you're looking for."
+  },
+  "propertyDetail": {
+    "backToProperties": "Back to Properties",
+    "edit": "Edit",
+    "delete": "Delete",
+    "price": "Price",
+    "details": "Details",
+    "location": "Location",
+    "description": "Description",
+    "noDescription": "No description available.",
+    "amenities": "Amenities",
+    "locationFeatures": "Location Features",
+    "noAmenities": "No amenities listed for this property.",
+    "noLocationFeatures": "No location features listed for this property.",
+    "notFound": "Property Not Found",
+    "notFoundMessage": "The property you're looking for doesn't exist or has been removed."
+  },
+  "messages": {
+    "title": "Messages",
+    "subtitle": "Communicate with tenants and team members",
+    "typeMessage": "Type your message..."
+  },
+  "tasks": {
+    "title": "Tasks",
+    "subtitle": "Manage and track property-related tasks",
+    "addTask": "Add Task",
+    "tabs": {
+      "open": "Open",
+      "inProgress": "In Progress",
+      "completed": "Completed",
+      "cancelled": "Cancelled"
+    },
+    "due": "Due",
+    "noTasks": "No tasks found",
+    "actions": {
+      "start": "Start",
+      "complete": "Complete",
+      "cancel": "Cancel"
+    }
+  },
+  "common": {
+    "bd": "bd",
+    "ba": "ba",
+    "sqft": "sqft",
+    "builtIn": "Built in"
+  }
+}

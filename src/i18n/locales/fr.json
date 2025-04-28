@@ -1,0 +1,99 @@
+{
+  "app": {
+    "name": "RentalProc"
+  },
+  "navigation": {
+    "home": "Accueil",
+    "properties": "Propriétés",
+    "tenants": "Locataires",
+    "payments": "Paiements",
+    "tasks": "Tâches",
+    "expenses": "Dépenses",
+    "facilities": "Installations",
+    "messages": "Messages",
+    "settings": "Paramètres"
+  },
+  "dashboard": {
+    "welcome": "Bienvenue sur votre tableau de bord de gestion immobilière.",
+    "stats": {
+      "totalProperties": "Total des Propriétés",
+      "propertiesUnderManagement": "Propriétés sous gestion",
+      "activeTenants": "Locataires Actifs",
+      "currentOccupancy": "Occupation actuelle",
+      "monthlyRevenue": "Revenus Mensuels",
+      "fromRentAndFees": "Des loyers et frais",
+      "openTasks": "Tâches Ouvertes",
+      "tasksRequiringAttention": "Tâches nécessitant attention"
+    },
+    "featuredProperties": "Propriétés en Vedette"
+  },
+  "properties": {
+    "title": "Propriétés",
+    "subtitle": "Gérez votre portefeuille immobilier",
+    "addProperty": "Ajouter une Propriété",
+    "filters": {
+      "search": "Rechercher des propriétés...",
+      "propertyType": "Type de Propriété",
+      "allTypes": "Tous les Types",
+      "status": "Statut",
+      "allStatuses": "Tous les Statuts",
+      "forSale": "À Vendre",
+      "forRent": "À Louer",
+      "active": "Active",
+      "sold": "Vendue",
+      "rented": "Louée",
+      "bedrooms": "Chambres",
+      "bathrooms": "Salles de Bain",
+      "any": "N'importe",
+      "priceRange": "Fourchette de Prix",
+      "resetFilters": "Réinitialiser les Filtres"
+    },
+    "noProperties": "Aucune propriété trouvée",
+    "tryAdjustingFilters": "Essayez d'ajuster vos filtres pour trouver ce que vous cherchez."
+  },
+  "propertyDetail": {
+    "backToProperties": "Retour aux Propriétés",
+    "edit": "Modifier",
+    "delete": "Supprimer",
+    "price": "Prix",
+    "details": "Détails",
+    "location": "Emplacement",
+    "description": "Description",
+    "noDescription": "Aucune description disponible.",
+    "amenities": "Équipements",
+    "locationFeatures": "Caractéristiques de l'Emplacement",
+    "noAmenities": "Aucun équipement répertorié pour cette propriété.",
+    "noLocationFeatures": "Aucune caractéristique d'emplacement répertoriée pour cette propriété.",
+    "notFound": "Propriété Non Trouvée",
+    "notFoundMessage": "La propriété que vous recherchez n'existe pas ou a été supprimée."
+  },
+  "messages": {
+    "title": "Messages",
+    "subtitle": "Communiquez avec les locataires et les membres de l'équipe",
+    "typeMessage": "Tapez votre message..."
+  },
+  "tasks": {
+    "title": "Tâches",
+    "subtitle": "Gérez et suivez les tâches liées aux propriétés",
+    "addTask": "Ajouter une Tâche",
+    "tabs": {
+      "open": "Ouvertes",
+      "inProgress": "En Cours",
+      "completed": "Terminées",
+      "cancelled": "Annulées"
+    },
+    "due": "Échéance",
+    "noTasks": "Aucune tâche trouvée",
+    "actions": {
+      "start": "Commencer",
+      "complete": "Terminer",
+      "cancel": "Annuler"
+    }
+  },
+  "common": {
+    "bd": "ch",
+    "ba": "sdb",
+    "sqft": "m²",
+    "builtIn": "Construit en"
+  }
+}

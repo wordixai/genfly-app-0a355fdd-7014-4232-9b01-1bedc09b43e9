@@ -71,7 +71,7 @@ const MainLayout = () => {
     },
     {
       title: t('navigation.messages'),
-      value: 'messages'),
+      value: 'messages',
       content: null,
     },
   ];
